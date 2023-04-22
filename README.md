@@ -1,4 +1,4 @@
-# Assignment #2
+# Exam #2 (Take Home)
 
 This program allows users to search for a TV show, gives them a list, and saves the details of the one they select to a `shows` sheet in the Excel file. Your assignment is to add to this program so that it also saves all the episodes for the selected show to a sheet called `episodes`. **Make sure that the episodes have some way of showing which show they are for.**
 
