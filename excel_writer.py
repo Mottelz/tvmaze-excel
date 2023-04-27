@@ -4,12 +4,13 @@ import os
 
 def write_dict_to_file(filename, sheetname, data):
     filename = f'{filename}.xlsx'
+
     if os.path.exists(filename):
         workbook = openpyxl.load_workbook(filename)
     else:
         workbook = openpyxl.Workbook()
 
-    if sheetname in workbook.worksheets:
+    if sheetname in workbook.sheetnames:
         worksheet = workbook[sheetname]
     else:
         worksheet = workbook.create_sheet(sheetname)
